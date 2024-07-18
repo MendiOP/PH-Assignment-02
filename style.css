@@ -28,8 +28,23 @@
   font-weight: 600;
 }
 
+.title{
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.subtitle{
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 50%; 
+  margin: 10px auto;
+}
+
 /* header styles */
-header {
+header, main {
   width: 65%;
   margin: 50px auto;
 }
@@ -152,10 +167,64 @@ header {
   transform: translate(870px, -520px);
 }
 
+.habit-header{
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.habit-card{
+  max-width: 300px;
+  text-align: center;
+}
+
+.habit-cards{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.habit-card img{
+  border-radius: 50%;
+}
+
+.habit-card p{
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.run{
+  margin-top: 70px;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  height: fit-content
+}
+
+.run-content p, h2, button{
+  margin: 20px 0;
+}
+
+.run-content h2{
+  font-weight: 900;
+}
+
+.image-container{
+  width: 50%;
+  
+}
+.image-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
 
 @media screen and (max-width: 576px) {
 
-  header{
+  header, main{
     width: 90%;
   }
   .banner-content, .content-subtitle{
@@ -209,5 +278,37 @@ header {
   }
   .card-top{
     transform: translate(0px, -520px);
+  }
+
+  .habit-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .subtitle{
+    width: 80%;
+  }
+
+  .habit-container{
+    margin-top: -130px;
+  }
+
+  .run{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .run p, button{
+    width: 100%;
+  }
+
+  .image-container{
+    width: 100%;
   }
 }
