@@ -26,6 +26,7 @@
   background-color: rgb(230, 83, 60);
   border: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .title{
@@ -235,14 +236,19 @@ header, .habit-container, .run, .trainers, .yoga{
   font-weight: 800;
 }
 
+.yoga-cards-wrapper {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #7c726a5d; 
+  overflow: hidden; 
+}
+
 .yoga-cards {
   display: grid;
   grid-auto-flow: column;
   border-radius: 20px;
   grid-auto-columns: max-content;
   gap: 20px;
-  background-color: #7c726a5d;
-  padding: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
@@ -254,6 +260,7 @@ header, .habit-container, .run, .trainers, .yoga{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -374,20 +381,18 @@ header, .habit-container, .run, .trainers, .yoga{
 }
 
 .yoga-cards::-webkit-scrollbar {
-  height: 8px;
+  height: 10px; /* set scrollbar height */
+  background-color: #c91818; /* set scrollbar background color */
 }
 
 .yoga-cards::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  background-color: #770e0e5b; /* set scrollbar thumb color */
+  border-radius: 10px;
 }
 
 .yoga-cards::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background-color: #aaa; /* set scrollbar thumb hover color */
 }
-
-
-
 
 
 .bmi{
@@ -704,6 +709,11 @@ footer{
 
   .image-container img{
     transform: scale(1.85) translate(-25px, 10px);
+  }
+
+  .yoga{
+    width: 80%;
+    font-size: 1.5rem;
   }
 
   .bmi {
