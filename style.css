@@ -382,12 +382,13 @@ header, .habit-container, .run, .trainers, .yoga{
 
 .yoga-cards::-webkit-scrollbar {
   height: 10px; /* set scrollbar height */
-  background-color: #c91818; /* set scrollbar background color */
+  background-color: #888666; /* set scrollbar background color */
+  border-radius: 30px;
 }
 
 .yoga-cards::-webkit-scrollbar-thumb {
   background-color: #770e0e5b; /* set scrollbar thumb color */
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .yoga-cards::-webkit-scrollbar-thumb:hover {
@@ -712,8 +713,12 @@ footer{
   }
 
   .yoga{
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
+  }
+
+  .yoga-cards-wrapper{
+    padding: 15px;
   }
 
   .bmi {
